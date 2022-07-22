@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  &-input {
+    background-color: $background2;
+    border-radius: 1rem;
+    padding: 0 15px;
+    outline: none;
+    border: none;
+    line-height: normal;
+    width: 100%;
+    color: white;
+  }
+  &-search {
+    height: 3rem;
+    background-color: $background2;
+    width: 60%;
+    border-radius: 1rem;
+    border: 1px solid #a7a8b0;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    color: #a7a8b0;
+    margin-right: 30rem;
+  }
+  &-icon {
+    cursor: pointer;
+    margin-right: 3rem;
+    font-size: 2rem;
+    color: white;
+  }
+  &-image img {
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+.block {
+  position: relative;
+  width: 100%;
+  background-color: $background2;
+  padding: 25px 30px 6px 30px;
+}

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/app.css">
+    <!-- link truyền icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link font chữ -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="music">
+            <!-- -------------------------- menu ----------------------- -->
+            <!--  <section class="menu">
+                <h2 class="menu-title">MUSIC</h2>
+                <ul class="menu-choose">
+                    <li class="menu-item">
+                        <i class="fa-solid fa-house menu-item_icon"></i>
+                        <a href="" class="menu-item_link">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <i class="fa-solid fa-house menu-item_icon"></i>
+                        <a href="" class="menu-item_link">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <i class="fa-solid fa-house menu-item_icon"></i>
+                        <a href="" class="menu-item_link">Home</a>
+                    </li>
+                </ul>
+                <div class="menu-library">
+                    <h3 class="menu-library_title title">your library</h3>
+                    <ul class="menu-library_list">
+                        <li class="menu-item">
+                            <i class="fa-solid fa-house menu-item_icon"></i>
+                            <a href="" class="menu-item_link">albums</a>
+                        </li>
+                        <li class="menu-item">
+                            <i class="fa-solid fa-house menu-item_icon"></i>
+                            <a href="" class="menu-item_link">albums</a>
+                        </li>
+                        <li class="menu-item">
+                            <i class="fa-solid fa-house menu-item_icon"></i>
+                            <a href="" class="menu-item_link">albums</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="menu-playlist">
+                    <h3 class="ption-playlist_title title">your library</h3>
+                    <ul class="menu-playlist_list">
+                        <li class="menu-item">
+                            <a href="" class="menu-item_link">albums</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-item_link">albums</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-item_link">albums</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </section> -->
+            <main class="block">
+                <!-- -------------------------- search ----------------------- -->
+                <!--  <section class="header">
+                    <div class="header-search">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="header-input" placeholder="Search..." autocomplete="off">
+                    </div>
+                    <i class="fa-solid fa-gear header-icon"></i>
+                    <i class="fa-solid fa-bell header-icon"></i>
+                    <div class="header-image">
+                        <img src="https://images.unsplash.com/photo-1640622308238-70e5f22fe0be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
+                            alt="">
+                    </div>
+                </section> -->
+                <!-- -------------------------- album ----------------------- -->
+                <section class="album">
+                    <div class="album-title">
+                        <span class="album-title_name">Bài hát</span>
+                        <span class="album-title_time">Thời gian</span>
+                    </div>
+                    <div class="center">
+                        <!-- -------------------------- list music ----------------------- -->
+
+
+                        <div class="album-list active" data-list="0">
+                            <div class="album-item active" data-music="0">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Chắc Ai Đó Sẽ Về</h3>
+                                    <span class="album-item_author">Sơn Tùng M-TP</span>
+                                </div>
+                                <div class="album-item_time">04:45</div>
+                            </div>
+                            <div class="album-item" data-music="1">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Chạy Ngay Đi</h3>
+                                    <span class="album-item_author">Sơn Tùng M-TP</span>
+                                </div>
+                                <div class="album-item_time">04:08</div>
+                            </div>
+                            <div class="album-item" data-music="2">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Chắc Có Yêu Là Đây</h3>
+                                    <span class="album-item_author">Sơn Tùng M-TP</span>
+                                </div>
+                                <div class="album-item_time">03:35</div>
+                            </div>
+
+                            <div class="album-item" data-music="3">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Hãy Trao Cho Anh</h3>
+                                    <span class="album-item_author">Sơn Tùng M-TP x Snoop Dogg</span>
+                                </div>
+                                <div class="album-item_time">04:05</div>
+                            </div>
+
+                            <div class="album-item" data-music="4">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Lạc Trôi</h3>
+                                    <span class="album-item_author">Sơn Tùng M-TP</span>
+                                </div>
+                                <div class="album-item_time">03:29</div>
+                            </div>
+
+                            <div class="album-item" data-music="5">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Muộn Rồi Mà Sao Còn</h3>
+                                    <span class="album-item_author">Sơn Tùng M-TP</span>
+                                </div>
+                                <div class="album-item_time">04:35</div>
+                            </div>
+
+                            <div class="album-item" data-music="6">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Nơi Này Có Anh</h3>
+                                    <span class="album-item_author">Sơn Tùng M-TP</span>
+                                </div>
+                                <div class="album-item_time">03:43</div>
+                            </div>
+                        </div>
+
+
+                        <div class="album-list" data-list="1">
+                            <div class="album-item" data-music="0">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Hai Triệu Năm</h3>
+                                    <span class="album-item_author">Đen</span>
+                                </div>
+                                <div class="album-item_time">03:36</div>
+                            </div>
+                            <div class="album-item" data-music="1">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Anh Đếch Cần Gì Ngoài Em</h3>
+                                    <span class="album-item_author">Đen</span>
+                                </div>
+                                <div class="album-item_time">03:37</div>
+                            </div>
+                            <div class="album-item" data-music="2">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Bài Này Chill Phết</h3>
+                                    <span class="album-item_author">Đen x Min</span>
+                                </div>
+                                <div class="album-item_time">04:36</div>
+                            </div>
+                            <div class="album-item" data-music="3">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Cho Mình Em</h3>
+                                    <span class="album-item_author">Binz x Đen</span>
+                                </div>
+                                <div class="album-item_time">03:28</div>
+                            </div>
+                            <div class="album-item" data-music="4">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Đi Về Nhà</h3>
+                                    <span class="album-item_author">Đen x JustaTee</span>
+                                </div>
+                                <div class="album-item_time">03:20</div>
+                            </div>
+                            <div class="album-item" data-music="5">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Đưa Nhau Đi Trốn</h3>
+                                    <span class="album-item_author">Đen x Linh Cáo</span>
+                                </div>
+                                <div class="album-item_time">03:13</div>
+                            </div>
+                            <div class="album-item" data-music="6">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Gieo Quẻ</h3>
+                                    <span class="album-item_author">Hoàng Thùy Linh x Đen</span>
+                                </div>
+                                <div class="album-item_time">03:18</div>
+                            </div>
+                            <div class="album-item" data-music="7">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Lối Nhỏ</h3>
+                                    <span class="album-item_author">Đen</span>
+                                </div>
+                                <div class="album-item_time">04:12</div>
+                            </div>
+
+                        </div>
+
+                        <div class="album-list" data-list="2">
+                            <div class="album-item" data-music="0">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Yêu Như Trẻ Con</h3>
+                                    <span class="album-item_author">B Ray</span>
+                                </div>
+                                <div class="album-item_time">04:45</div>
+                            </div>
+                            <div class="album-item" data-music="1">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Ba Da Bum</h3>
+                                    <span class="album-item_author">B Ray</span>
+                                </div>
+                                <div class="album-item_time">04:08</div>
+                            </div>
+                            <div class="album-item" data-music="2">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Bản Nhạc Buồn</h3>
+                                    <span class="album-item_author">B Ray</span>
+                                </div>
+                                <div class="album-item_time">04:08</div>
+                            </div>
+                            <div class="album-item" data-music="3">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Boy Mỹ Con</h3>
+                                    <span class="album-item_author">B Ray</span>
+                                </div>
+                                <div class="album-item_time">04:08</div>
+                            </div>
+                            <div class="album-item" data-music="4">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Cao Ốc 20</h3>
+                                    <span class="album-item_author">B Ray x DatG</span>
+                                </div>
+                                <div class="album-item_time">04:08</div>
+                            </div>
+                            <div class="album-item" data-music="5">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Con Trai Cưng</h3>
+                                    <span class="album-item_author">B Ray</span>
+                                </div>
+                                <div class="album-item_time">04:08</div>
+                            </div>
+                            <div class="album-item" data-music="6">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Cưới Thôi</h3>
+                                    <span class="album-item_author">Masew x Masiu x B Ray x TAP</span>
+                                </div>
+                                <div class="album-item_time">04:08</div>
+                            </div>
+                            <div class="album-item" data-music="7">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Do For Love</h3>
+                                    <span class="album-item_author">B Ray x Amee</span>
+                                </div>
+                                <div class="album-item_time">04:08</div>
+                            </div>
+                            <div class="album-item" data-music="8">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Đừng Tin Her</h3>
+                                    <span class="album-item_author">B Ray x Young H x Masew</span>
+                                </div>
+                                <div class="album-item_time">04:08</div>
+                            </div>
+                            <div class="album-item" data-music="9">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Hoàn Hảo</h3>
+                                    <span class="album-item_author">B Ray</span>
+                                </div>
+                                <div class="album-item_time">04:08</div>
+                            </div>
+                            <div class="album-item" data-music="10">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Xin Đừng Nhấc Máy</h3>
+                                    <span class="album-item_author">B Ray x Han Sara</span>
+                                </div>
+                                <div class="album-item_time">04:08</div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="album-list" data-list="3">
+                            <div class="album-item" data-music="0">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Chắc Ai Đó Sẽ Về</h3>
+                                    <span class="album-item_author">Sơn Tùng M-TP</span>
+                                </div>
+                                <div class="album-item_time">04:45</div>
+                            </div>
+                            <div class="album-item" data-music="1">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Chạy Ngay Đi</h3>
+                                    <span class="album-item_author">Sơn Tùng M-TP</span>
+                                </div>
+                                <div class="album-item_time">04:08</div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="album-list" data-list="4">
+                            <div class="album-item" data-music="0">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Chắc Ai Đó Sẽ Về</h3>
+                                    <span class="album-item_author">Sơn Tùng M-TP</span>
+                                </div>
+                                <div class="album-item_time">04:45</div>
+                            </div>
+                            <div class="album-item" data-music="1">
+                                <i class="fa-solid fa-music album-item_icon"></i>
+                                <div class="album-item_image">
+                                    <img src="https://images.unsplash.com/photo-1644530633761-094c893a6558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="album-item_user">
+                                    <h3 class="album-item_name">Chạy Ngay Đi</h3>
+                                    <span class="album-item_author">Sơn Tùng M-TP</span>
+                                </div>
+                                <div class="album-item_time">04:08</div>
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- -------------------------- nghe nhạc ----------------------- -->
+                        <section class="player">
+                            <div class="player-box">
+                                <div class="player-media">
+                                    <img src="https://cdn.dribbble.com/users/3960463/screenshots/14630140/media/c79331860d7ca1b97430a4888617f428.png?compress=1&resize=800x600"
+                                        alt="" class="player-image" />
+                                </div>
+                                <div class="player-user">
+                                    <h3 class="player-name">Chắc Ai Đó Sẽ Về</h3>
+                                    <span class="player-author">Sơn Tùng M-TP</span>
+                                </div>
+                                <div class="player-progress">
+                                    <span class="player-start">0:00</span>
+                                    <input type="range" id="progress-bar" min="0" max="" value="0" class="bar" />
+                                    <audio src="./audio/ChacAiDoSeVe.mp3" id="song"></audio>
+                                    <span class="player-end">0:00</span>
+                                </div>
+                                <div class="player-time">
+                                    <i class="fas fa-redo player-reload"></i>
+                                    <i class="fa fa-backward player-prev"></i>
+                                    <i class="fa fa-play player-play"></i>
+                                    <i class="fa fa-forward player-next"></i>
+                                    <i class="fas fa-random player-random"></i>
+                                </div>
+                                <div class="player-wave">
+                                    <span class="stroke"></span>
+                                    <span class="stroke"></span>
+                                    <span class="stroke"></span>
+                                    <span class="stroke"></span>
+                                    <span class="stroke"></span>
+                                    <span class="stroke"></span>
+                                    <span class="stroke"></span>
+                                    <span class="stroke"></span>
+                                    <span class="stroke"></span>
+                                    <span class="stroke"></span>
+                                    <span class="stroke"></span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <!-- -------------------------- albumAuthor ----------------------- -->
+                <section class="albumAuthor">
+                    <div class="albumAuthor-list">
+                        <div class="albumAuthor-item active" data-item="0">
+                            <div class="albumAuthor-item_image">
+                                <img src="./image/sontung.jpg" alt="">
+                            </div>
+                            <h2 class="albumAuthor-item_author">Sơn Tùng M-TP</h2>
+                            <span class="albumAuthor-item_artist">Nghệ sĩ</span>
+                        </div>
+                        <div class="albumAuthor-item" data-item="1">
+                            <div class="albumAuthor-item_image">
+                                <img src="./image/denvau.jpg" alt="">
+                            </div>
+                            <h2 class="albumAuthor-item_author">Đen Vâu(Đen)</h2>
+                            <span class="albumAuthor-item_artist">Nghệ sĩ</span>
+                        </div>
+                        <div class="albumAuthor-item" data-item="2">
+                            <div class="albumAuthor-item_image">
+                                <img src="./image/Bray1.jpg" alt="">
+                            </div>
+                            <h2 class="albumAuthor-item_author">B Ray</h2>
+                            <span class="albumAuthor-item_artist">Nghệ sĩ</span>
+                        </div>
+                        <div class="albumAuthor-item" data-item="3">
+                            <div class="albumAuthor-item_image">
+                                <img src="./image/sontung.jpg" alt="">
+                            </div>
+                            <h2 class="albumAuthor-item_author">Sơn Tùng M-TP</h2>
+                            <span class="albumAuthor-item_artist">Nghệ sĩ</span>
+                        </div>
+                        <div class="albumAuthor-item" data-item="4">
+                            <div class="albumAuthor-item_image">
+                                <img src="./image/sontung.jpg" alt="">
+                            </div>
+                            <h2 class="albumAuthor-item_author">Sơn Tùng M-TP</h2>
+                            <span class="albumAuthor-item_artist">Nghệ sĩ</span>
+                        </div>
+
+                    </div>
+                </section>
+            </main>
+        </section>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

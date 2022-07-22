@@ -1,0 +1,48 @@
+.music{
+  display: flex;
+}
+.menu {
+  height: 100%;
+  width: 25%;
+  color: white;
+  text-transform: uppercase;
+  padding: 50px 0;
+  &-title {
+    margin-left: 5rem;
+    color: $green-color;
+    padding-bottom: 3rem;
+  }
+  &-choose {
+    padding-bottom: 3rem;
+  }
+  &-item {
+    transition: all 0.25s linear;
+    padding-left: 5rem !important;
+    position: relative;
+    padding: 5px 0;
+    z-index: 2;
+    
+    &_link {
+      transition: all 0.25s linear;
+      color: white;
+      display: inline-block;
+      font-weight: 400;
+      margin-left: 1rem;
+      border-bottom: 3px solid transparent;
+      padding-bottom: 5px;
+    }
+  }
+  &-library {
+    padding-bottom: 3rem;
+  }
+  &-item:hover {
+    transition: all 0.25s linear;
+    color: $green-color;
+    .option-item_link {
+      color: $green-color;
+      border-bottom: 3px solid $green-color;
+      border-radius: 2px;
+      padding-bottom: 5px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.albumAuthor {
+  margin-top: 10rem;
+  &-list {
+    display: flex;
+    align-items: center;
+  }
+  &-item {
+    width: 18rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    padding: 1rem 6px;
+    border-radius: 1rem;
+    background-color: #181818;
+    &_image img {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 100rem;
+      object-fit: cover;
+    }
+    &_image {
+      display: table;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    &_author {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      color: #fff;
+      font-size: 16px;
+    }
+    &_artist {
+      font-size: 14px;
+      color: #8c8c8c;
+    }
+  }
+}
+.albumAuthor-item.active {
+  transition: all 0.25s linear;
+  box-shadow: 0px 0px 3px 3px #4286f4d2;
+}
